@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_buscar_estacionamiento"
+            android:title="Buscar Estacionamiento" />
+        <item
+            android:id="@+id/nav_consultar_estacionamiento"
+            android:title="Consultar Estacionamiento" />
+        <item
+            android:id="@+id/nav_registrar_estacionamiento"
+            android:title="Registrar estacionamiento" />
+        <item
+            android:id="@+id/nav_consultar_reserva"
+            android:title="Consultar reserva" />
+        <item
+            android:id="@+id/nav_cerrar_sesion"
+            android:title="Cerrar Sesión" />
+    </group>
+
+</menu>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_buscar_estacionamiento">
+
+    <fragment
+        android:id="@+id/nav_buscar_estacionamiento"
+        android:name="com.upc.autoparqueo.fragmentos.BuscarEstacionamientoFragment"
+        android:label="Buscar Estacionamiento"
+        tools:layout="@layout/fragment_buscar_estacionamiento" />
+    <fragment
+        android:id="@+id/nav_consultar_estacionamiento"
+        android:name="com.upc.autoparqueo.fragmentos.BuscarEstacionamientoFragment"
+        android:label="Consultar Estacionamiento"
+        tools:layout="@layout/fragment_buscar_estacionamiento" />
+
+    <fragment
+        android:id="@+id/nav_registrar_estacionamiento"
+        android:name="com.upc.autoparqueo.fragmentos.RegistrarEstacionamientoFragment"
+        android:label="Registrar Estacionamiento"
+        tools:layout="@layout/fragment_registrar_estacionamiento" />
+    <fragment
+        android:id="@+id/nav_consultar_reserva"
+        android:name="com.upc.autoparqueo.fragmentos.ReservaFragment"
+        android:label="Reservas"
+        tools:layout="@layout/fragment_reserva" />
+
+</navigation>
