@@ -9,51 +9,202 @@
     tools:context=".actividades.ReservarEstacionamientoActivity">
 
     <TextView
+
         android:id="@+id/tvNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nombre " />
+        android:text="Nombre: " />
 
     <TextView
+        android:layout_marginTop="8dp"
         android:id="@+id/tvDireccion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dirección" />
+        android:text="Dirección: " />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/tvDistrito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distrito: " />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/tvHorarioAtencion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Horario de atención: 08:00 AM a 10:00 PM" />
 
     <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Fecha Reserva:"
+            android:layout_marginRight="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvFecha"
+            tools:text="02/02/2020"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hora Inicio:"/>
+            <TextView
+                android:id="@+id/tvHorarioInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                tools:text="08:00 AM"
+                android:textColor="@color/colorPrimary"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingStart="4dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hora Fin:"/>
+            <TextView
+                android:id="@+id/tvHorarioFin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="09:00 AM"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/etHoraInicio"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+        <LinearLayout
+            android:paddingEnd="4dp"
+            android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:ems="10"
-            android:hint="Hora Inicio"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/etHoraFin"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio x Hora:"/>
+            <TextView
+
+                android:gravity="center_vertical"
+                android:id="@+id/etPrecioHora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="S/ 10.0"
+                android:textStyle="bold"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingStart="4dp"
             android:layout_weight="1"
-            android:ems="10"
-            android:hint="Hora Fin"
-            android:inputType="textPersonName" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Horas:"/>
+            <TextView
+                android:id="@+id/tvTotalHora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                tools:text="1"
+                />
+        </LinearLayout>
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/mapa" />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/tvMontoTotal"
+        android:text="S/ 0.0"
+        android:textStyle="bold"
+        android:textSize="38sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:text="Monto neto"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:text="Ubicacion"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:layout_weight="1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
 
     <Button
+        android:textAllCaps="false"
         android:id="@+id/btnReservar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Reservar" />
+        android:text="Reservar"
+        android:textColor="@color/colorPrimaryText"
+        android:background="@color/colorPrimary"/>
 </LinearLayout>

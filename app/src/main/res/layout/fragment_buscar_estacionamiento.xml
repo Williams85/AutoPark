@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F0ECEC"
+    android:padding="4dp"
     tools:context=".fragmentos.BuscarEstacionamientoFragment">
 
     <LinearLayout
@@ -15,21 +17,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/etBuscar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Buscar Estacionamiento"
-            android:inputType="textPersonName" />
-
-        <ImageView
-            android:id="@+id/ivBuscar"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:padding="8dp"
-            app:srcCompat="@drawable/ic_search" />
+       <androidx.appcompat.widget.SearchView
+           android:background="@android:color/white"
+           android:id="@+id/srvBuscar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
 
     </LinearLayout>
 

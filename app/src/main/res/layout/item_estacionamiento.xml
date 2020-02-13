@@ -1,21 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/contenedor"
+    android:background="@android:color/white"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tvHorario"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:padding="8dp"
-        tools:text="Horario" />
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvHorarioInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textSize="12sp"
+            tools:text="10:00PM" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvHorarioFin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textSize="12sp"
+            tools:text="12:00PM" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
@@ -35,6 +57,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="Dirección" />
+
+        <TextView
+            android:id="@+id/tvDistrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Distrito" />
     </LinearLayout>
 
     <ImageView

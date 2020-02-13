@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:padding="16dp"
+
     tools:context=".actividades.InicioSesionActivity">
 
     <ImageView
@@ -44,7 +45,7 @@
 
     <Button
         android:id="@+id/btnIngresar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:text="Ingresar"
